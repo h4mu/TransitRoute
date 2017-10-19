@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TransitRoute.Views.SearchPage" Title="Search">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Search" Clicked="Search_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="From" FontSize="Medium" />
+            <Entry Text="{Binding Search.From}" FontSize="Small" />
+            <Label Text="To" FontSize="Medium" />
+            <Editor Text="{Binding Search.To}" FontSize="Small" Margin="0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
